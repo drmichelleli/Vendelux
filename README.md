@@ -13,6 +13,27 @@ The dataset consists of approximately 1,600 labeled observations. Each observati
 ## Method
 
 Three methods are provided in the repository. 
- 1. key word search 
- 2. Text embedding + neural network classifier
- 3. Prompt engineering with LLM
+ - **1. Event search** 
+       To run this algorithm: 
+       - First, activate the environment: source .venv/bin/activate
+       - Secondly, run the code: python run_event_search.py
+       - outputs
+            - one log file: event_search_YYYY_MM_DD_HH_MM.log
+            - two csv files: ./output/event_key_word_filtered_data_set.csv  and ./output/event_key_word_whole_data_set.csv
+
+ - **2. Text embedding + neural network classifier**
+        To run this algorithm:
+       - First, activate the environment: source .venv/bin/activate
+       - Secondly, run the code: python run_nn_classifier.py
+       - outputs
+            - one log file: nn_classifier_YYYY_MM_DD_HH_MM.log
+            - two csv files: ./output/nn_classifier_filtered_data_set.csv  and ./output/nn_classifier_whole_data_set.csv
+
+- **3. Prompt engineering with LLM**
+      To run this algorithm: 
+      - First, provide openai API key in the libs/llm_fun.py   
+      - Secondly, activate the environment: source .venv/bin/activate
+      - - outputs
+            - one log file: nn_classifier_YYYY_MM_DD_HH_MM.log
+            - two csv files: ./output/prompt_classifier_filtered_data_set.csv  and ./output/prompt_classifier_whole_data_set.csv
+- 
