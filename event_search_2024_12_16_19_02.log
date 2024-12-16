@@ -1,0 +1,30 @@
+2024-12-16 19:02:43,827 - INFO - input data size: 1569
+2024-12-16 19:02:43,827 - INFO - Key word search on the whole data set 
+2024-12-16 19:02:43,831 - INFO - Accuracy: 0.7705544933078394
+2024-12-16 19:02:43,848 - INFO - Classification Report:
+2024-12-16 19:02:43,848 - INFO -               precision    recall  f1-score   support
+
+          no       1.00      0.66      0.80      1070
+         yes       0.58      1.00      0.73       499
+
+    accuracy                           0.77      1569
+   macro avg       0.79      0.83      0.77      1569
+weighted avg       0.87      0.77      0.78      1569
+
+2024-12-16 19:02:43,848 - INFO - "Key word search algorithm finished successfully and it took 0.00034996666666666664 minutes
+
+2024-12-16 19:02:43,987 - INFO - Key word search on the filtered data set 
+2024-12-16 19:02:43,996 - INFO - filtered data size: 859
+2024-12-16 19:02:44,000 - INFO - Accuracy: 0.9650756693830035
+2024-12-16 19:02:44,019 - INFO - Classification Report:
+2024-12-16 19:02:44,019 - INFO -               precision    recall  f1-score   support
+
+          no       1.00      0.92      0.96       368
+         yes       0.94      1.00      0.97       491
+
+    accuracy                           0.97       859
+   macro avg       0.97      0.96      0.96       859
+weighted avg       0.97      0.97      0.96       859
+
+2024-12-16 19:02:44,019 - INFO - "Key word search algorithm finished successfully and it took 0.0003758666666666667 minutes
+
