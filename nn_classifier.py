@@ -10,18 +10,7 @@ from libs.preprocess_func import merge_text
 import logging
 from datetime import datetime, timedelta
 
-# define logger,file handler and set formatter
-# logger = logging.getLogger(__name__)
-# log_file = datetime.now().strftime('%Y_%m_%d_%H_%M')+'_nn_classifier.log'
-# filename='./Logs/'+ log_file
-# file_handler = logging.FileHandler(filename)
-# logging.basicConfig(
-#     format="%(asctime)s,%(msecs)d %(name)s %(levelname)s %(message)s",
-#     level=logging.INFO,
-#     filename=filename,
-# )
-
-logging.basicConfig(filename='training.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='nn_classifier.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 start = datetime.now()
 random_seed = 42
