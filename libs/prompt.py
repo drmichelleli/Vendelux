@@ -5,7 +5,7 @@ def event_prompt(text):
                 The post date needs to within 12 months before or after the event date. \
                 Make sure that the post about the DMEXCO in 2024 not in other years. return 'yes' if the post is related to the DMEXCO 2024, return 'no' if not.\
                 Also output the reason why you make this judgement. \
-                The output should be in json format with the keys being "dmexco_related" and "reason". Make sure the json format is correct and \
+                The output should be in json format with the keys being "dmexco_found" and "reason". Make sure the json format is correct and \
                 can be parsed by a json.loads function \
                 the social media post is given below delimited by triple backticks.\
              ```{text}```

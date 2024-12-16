@@ -1,4 +1,3 @@
-import dotenv
 import os
 import logging
 import json
@@ -6,8 +5,6 @@ import openai
 import asyncio
 import ssl
 from aiohttp import ClientSession, TCPConnector
-
-dotenv.load_dotenv()
 from functools import partial
 from tenacity import retry, stop_after_delay, wait_fixed, retry_if_exception_type
 import logging
@@ -33,12 +30,12 @@ logging.basicConfig(
 class LLMScore():
 
     def __init__(self,text,prompt_template):
-        self.gpt_model_type_4k = os.environ["AZURE_OPENAI_GPT35_MODEL_NAME1"]
-        self.gpt_model_type_16k = os.environ["AZURE_OPENAI_GPT35_MODEL_NAME"]
-        openai.api_key = os.environ["OPENAI_API_KEY"]
-        openai.api_base = os.environ["OPENAI_ENDPOINT"]
-        openai.api_version = os.environ["OPENAI_API_VERSION"]
-        openai.api_type = os.environ["OPENAI_API_TYPE"]
+        self.gpt_model_type_4k = "YOUR_GPT_MODEL_NAME 4k"
+        self.gpt_model_type_16k = "YOUR_GPT_MODEL_NAME 16k"
+        openai.api_key = "YOUR_OPENAI key"
+        openai.api_base = "YOUR OPENAI API BASE"
+        openai.api_version = "Your OpenAI API Version"
+        openai.api_type = "Your OpenAI API Type"
         self.text=text
         self.prompt_template=prompt_template
         self.responses=[]

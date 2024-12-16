@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report
 start = datetime.now()
 
 # prepare the training and testing data for the classification model
-input_df = pd.read_excel('Vendelux - Sr. Data Scientist Take Home Assessment - Dataset (1) (1).xlsx', sheet_name='post_details')
+input_df = pd.read_excel('input/Dataset.xlsx', sheet_name='post_details')
 input_df.drop_duplicates(subset = 'POST_ID', inplace = True)
 
 input_df['post_date'] = input_df['DATE_PUBLISHED'].str[0:10]
@@ -25,14 +25,13 @@ responses = classifier.return_results()
 chpt_classified_data = pd.DataFrame(responses)
 
 output_df = pd.merge(input_df, chpt_classified_data, on = 'id', how ='inner')
-output_df.to_csv('prompt_classified_data.csv', index = False)
+output_df.to_csv('output/prompt_classification_output.csv', index = False)
 print('output file length', len(output_df))
 
 true_values = output_df['IS_ATTENDING']
-predicted_values = output_df['dmexco_related']
+predicted_values = output_df['dmexco_found']
 accuracy = accuracy_score(true_values, predicted_values)
 print(f'Accuracy: {accuracy}')
-
 
 # Print classification report
 class_report = classification_report(true_values, predicted_values)
