@@ -28,8 +28,10 @@ To run the key word search
 
     ```
 The outputs include:
-    - Log file: `event_search_YYYY_MM_DD_HH_MM.log`
-    - CSV files: `./output/event_key_word_filtered_data_set.csv` and `./output/event_key_word_whole_data_set.csv`
+    ```- Log file: `event_search_YYYY_MM_DD_HH_MM.log`
+    ```
+    ```- CSV files: `./output/event_key_word_filtered_data_set.csv` and `./output/event_key_word_whole_data_set.csv`
+    ```
 
 
 ### 2. Neural Network Classifier
