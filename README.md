@@ -30,8 +30,8 @@ To run the keyword search:
 
 - **Log file**: `event_search_YYYY_MM_DD_HH_MM.log`
 - **CSV files**:
-  - [event_key_word_filtered_data_set.csv](http://_vscodecontentref_/1)
-  - [event_key_word_whole_data_set.csv](http://_vscodecontentref_/2)
+  - [event_key_word_filtered_data_set.csv](http://_vscodecontentref_/0)
+  - [event_key_word_whole_data_set.csv](http://_vscodecontentref_/1)
 
 ### 2. Neural Network Classifier
 
@@ -50,14 +50,14 @@ To run the neural network classifier:
 
 - **Log file**: `nn_classifier_YYYY_MM_DD_HH_MM.log`
 - **CSV files**:
-  - [nn_classifier_filtered_data_set.csv](http://_vscodecontentref_/3)
-  - [nn_classifier_whole_data_set.csv](http://_vscodecontentref_/4)
+  - [nn_classifier_filtered_data_set.csv](http://_vscodecontentref_/2)
+  - [nn_classifier_whole_data_set.csv](http://_vscodecontentref_/3)
 
 ### 3. Prompt Engineering with LLM
 
 To run the prompt engineering algorithm:
 
-1. Provide the OpenAI API key in [llm_fun.py](http://_vscodecontentref_/5).
+1. Provide the OpenAI API key in `libs/llm_fun.py`.
 2. Activate the environment:
     ```sh
     source .venv/bin/activate
@@ -71,5 +71,5 @@ To run the prompt engineering algorithm:
 
 - **Log file**: `prompt_classifier_YYYY_MM_DD_HH_MM.log`
 - **CSV files**:
-  - `./output/prompt_classifier_filtered_data_set.csv`
-  - `./output/prompt_classifier_whole_data_set.csv`
+  - [prompt_classifier_filtered_data_set.csv](http://_vscodecontentref_/4)
+  - [prompt_classifier_whole_data_set.csv](http://_vscodecontentref_/5)
