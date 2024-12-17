@@ -23,7 +23,7 @@ To run the keyword search:
     ```
 2. Execute the script:
     ```sh
-    python nn_classifier.py
+    python run_event_search.py
     ```
 
 #### Outputs:
@@ -43,7 +43,7 @@ To run the neural network classifier:
     ```
 2. Execute the training script:
     ```sh
-    python nn_classifier.py
+    python run_nn_classifier.py
     ```
 
 #### Outputs:
@@ -64,7 +64,7 @@ To run the prompt engineering algorithm:
     ```
 3. Execute the script:
     ```sh
-    python prompt_classifier.py
+    python run_prompt_classifier.py
     ```
 
 #### Outputs:
