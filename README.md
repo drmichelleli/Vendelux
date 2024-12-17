@@ -6,18 +6,17 @@ The Vendelux project aims to determine whether LinkedIn posts indicate attendanc
 
 The dataset consists of approximately 1,600 labeled observations. Each observation contains a LinkedIn post and a label:
 
-## Labels
-
 - **Yes**: The post suggests the user is attending the 2024 event (even loosely, such as planning to attend, promoting, or expressing general interest).
 - **No**: The post does not suggest the user is attending the 2024 event.
 
 ## Model Training and Evaluation
 
-Three methods were provided inthe repository
+Three methods are provided in the repository:
 
-### 1. Key word search
+### 1. Keyword Search
 
-To run the key word search
+To run the keyword search:
+
 1. Activate the environment:
     ```sh
     source .venv/bin/activate
@@ -25,14 +24,14 @@ To run the key word search
 2. Execute the script:
     ```sh
     python nn_classifier.py
-
-    ```
-The outputs include:
-    ```- Log file: `event_search_YYYY_MM_DD_HH_MM.log`
-    ```
-    ```- CSV files: `./output/event_key_word_filtered_data_set.csv` and `./output/event_key_word_whole_data_set.csv`
     ```
 
+#### Outputs:
+
+- **Log file**: `event_search_YYYY_MM_DD_HH_MM.log`
+- **CSV files**:
+  - [event_key_word_filtered_data_set.csv](http://_vscodecontentref_/1)
+  - [event_key_word_whole_data_set.csv](http://_vscodecontentref_/2)
 
 ### 2. Neural Network Classifier
 
@@ -42,19 +41,23 @@ To run the neural network classifier:
     ```sh
     source .venv/bin/activate
     ```
-2. Execute the script:
+2. Execute the training script:
     ```sh
     python nn_classifier.py
     ```
-The outputs include:
-    - Log file: `nn_classifier_YYYY_MM_DD_HH_MM.log`
-    - CSV files: `./output/nn_classifier_filtered_data_set.csv` and `./output/nn_classifier_whole_data_set.csv`
+
+#### Outputs:
+
+- **Log file**: `nn_classifier_YYYY_MM_DD_HH_MM.log`
+- **CSV files**:
+  - [nn_classifier_filtered_data_set.csv](http://_vscodecontentref_/3)
+  - [nn_classifier_whole_data_set.csv](http://_vscodecontentref_/4)
 
 ### 3. Prompt Engineering with LLM
 
 To run the prompt engineering algorithm:
 
-1. Provide the OpenAI API key in `libs/llm_fun.py`.
+1. Provide the OpenAI API key in [llm_fun.py](http://_vscodecontentref_/5).
 2. Activate the environment:
     ```sh
     source .venv/bin/activate
@@ -63,6 +66,10 @@ To run the prompt engineering algorithm:
     ```sh
     python prompt_classifier.py
     ```
-The outputs include:
-    - Log file: `prompt_classifier_YYYY_MM_DD_HH_MM.log`
-    - CSV files: `./output/prompt_classifier_filtered_data_set.csv` and `./output/prompt_classifier_whole_data_set.csv`
+
+#### Outputs:
+
+- **Log file**: `prompt_classifier_YYYY_MM_DD_HH_MM.log`
+- **CSV files**:
+  - `./output/prompt_classifier_filtered_data_set.csv`
+  - `./output/prompt_classifier_whole_data_set.csv`
