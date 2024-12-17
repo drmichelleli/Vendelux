@@ -1,0 +1,27 @@
+2024-12-16 16:56:17,598 - INFO - input data size: 1569
+2024-12-16 16:56:17,600 - INFO - prompt classifier on the whole data set
+2024-12-16 17:00:48,234 - INFO - Prompt classifier finished successfully and it took 4.561791016666667 minutes
+2024-12-16 17:00:48,238 - INFO - whole data set accuracy: 0.9643
+2024-12-16 17:00:48,308 - INFO - whole data set classification Report:
+              precision    recall  f1-score   support
+
+          no       0.98      0.97      0.97      1070
+         yes       0.93      0.96      0.94       499
+
+    accuracy                           0.96      1569
+   macro avg       0.96      0.96      0.96      1569
+weighted avg       0.96      0.96      0.96      1569
+
+2024-12-16 17:00:48,479 - INFO - prompt classifier on the filtered data set
+2024-12-16 17:00:48,491 - INFO - filtered data size: 859
+2024-12-16 17:03:16,157 - INFO - Prompt classifier finished successfully and it took 2.4613104166666666 minutes
+2024-12-16 17:03:16,161 - INFO - filtered data set accuracy: 0.9488
+2024-12-16 17:03:16,194 - INFO - filtered data set classification Report:
+              precision    recall  f1-score   support
+
+          no       0.95      0.93      0.94       368
+         yes       0.95      0.97      0.96       491
+
+    accuracy                           0.95       859
+   macro avg       0.95      0.95      0.95       859
+weighted avg       0.95      0.95      0.95       859
